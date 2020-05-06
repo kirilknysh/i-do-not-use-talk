@@ -1,0 +1,48 @@
+/**
+ * Pink swank theme for reveal.js.
+ *
+ * By Kiril Knysh, https://kirilknysh.github.io/
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(../../lib/font/questrial/questrial.css);
+
+$emphasisColor: #ff3385;
+$red: #d44333;
+$green: #47b275;
+
+$backgroundColor: #000;
+
+$mainFont: 'Questrial', 'Helvetica Neue', Helvetica, Tahoma, sans-serif;
+
+$headingFont: $mainFont;
+$heading1Size: 1.5em;
+$heading2Size: 1.3em;
+$headingTextTransform: none;
+
+$linkColor: #c3376f;
+$linkColorHover: lighten($linkColor, 20%);
+
+$selectionBackgroundColor: darken($emphasisColor, 30%);
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.emphasis {
+	color: $emphasisColor;
+}
+
+.huge {
+	font-size: 7em;
+}
+
+.reveal a {
+	text-decoration: underline;
+}
